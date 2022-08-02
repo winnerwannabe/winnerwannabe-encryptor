@@ -12,8 +12,8 @@ def print_quickly(char):
 while True:
   print('type a your message. if finished type "done".')
   message = input(">")
-  chars += len(message)
-  while chars > 36:
+  chars += len(message)#makes it so the characters start going forward the characters in message+ randnum
+  while chars > 36:#makes it so that it does not try to add alphabet[37] when the highest is alphabet[36]
     chars -= 36
   
   for c in range(len(message)):
